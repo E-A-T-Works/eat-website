@@ -1,0 +1,211 @@
+body {
+  --font-sans: Redaction;
+  --font-serif: Redaction;
+}
+
+.gh-head-brand .gh-head-logo,
+.gh-copyright {
+  font-family: Inter;
+}
+
+/* ------------------------------------ */
+
+.gh-btn {
+  border-radius: 2px;
+}
+
+/* ------------------------------------ */
+
+.gh-signup .gh-subscribe-input {
+  border-radius: 2px;
+}
+
+/* ------------------------------------ */
+
+.gh-article-title {
+  font-size: 6.8rem;
+}
+
+@media (max-width: 767px) {
+  .gh-article-title {
+    font-size: 3.8rem;
+  }
+  article.gh-latest.gh-card p {
+    font-size: 2.4rem !important;
+    line-height: 1.24 !important;
+  }
+}
+
+/* ------------------------------------ */
+
+.gh-card-title,
+.gh-article-title,
+.kg-header-card-header,
+.nav > li > a {
+  font-family: Redaction_20;
+}
+
+.gh-card-title:hover,
+.gh-article-title:hover,
+.kg-header-card-header:hover,
+.nav > li > a:hover {
+  font-family: Redaction_70;
+}
+
+/* ------------------------------------ */
+
+article.gh-latest.gh-card p {
+  font-size: 2.8rem;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+}
+
+article.gh-latest.gh-card a.gh-btn {
+  margin: 32px 0;
+}
+
+/* ------------------------------------ */
+
+.community {
+  background: #fbfbfb;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0 0;
+}
+
+.community section h2 {
+}
+
+.community section ul {
+  list-style: none;
+  padding: 0 0;
+}
+
+.community section ul li {
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.community section ul li a {
+  width: 100%;
+  display: flex;
+  padding: 32px 0 8px 0;
+  justify-content: space-between;
+}
+
+/* ------------------------------------ */
+
+.gh-foot.gh-outer {
+  background: var(--color-black);
+}
+
+.gh-foot.gh-outer .gh-foot-inner {
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gh-foot a:hover {
+  color: var(--color-white);
+}
+
+.gh-foot.gh-outer .gh-foot-inner.gh-inner .gh-head-brand-wrapper {
+}
+
+/* ------------------------------------ */
+
+section.tag-page-heading {
+  margin: 0 0 32px 0;
+}
+
+section.tag-page-heading .gh-card {
+  margin: 16px 0 32px 0;
+}
+
+section.tag-page-heading .gh-card header h1 {
+  font-size: 7.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* ------------------------------------ */
+
+ul.card-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 32px 0;
+  padding: 0 12px 18px 12px;
+
+  grid-column: full-start/full-end;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 12px;
+}
+
+ul.card-list > li {
+  padding: 0 12px 0 0;
+  margin: 0 0;
+
+  scroll-snap-align: start;
+}
+
+ul.card-list > li > div.card {
+  background-color: #fbfbfb;
+  border-radius: 0px;
+  width: 33vw;
+  height: 384px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+ul.card-list > li > div.card > img {
+  width: 100%;
+  height: 64%;
+  object-fit: cover;
+}
+
+ul.card-list > li > div.card > h3 {
+  margin: 8px 4px 4px 4px;
+  font-size: 24px;
+
+  flex: 1;
+}
+
+ul.card-list > li > div.card > div.content > p,
+ul.card-list > li > div.card > div.content > a {
+  margin: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul.card-list > li > div.card > div.content > p {
+  float: left;
+}
+
+ul.card-list > li > div.card > div.content > a {
+  float: right;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  ul.card-list > li > div.card {
+    width: 50vw;
+    height: 320px;
+  }
+
+  ul.card-list > li > div.card > h3 {
+    font-size: 18px;
+  }
+
+  ul.card-list > li > div.card > div.content > p,
+  ul.card-list > li > div.card > div.content > a {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,32 @@
+{{!< default}}
+
+<main id="gh-main" class="gh-main gh-canvas">
+    {{#tag}}
+        <section class="tag-page-heading">
+            <div class="gh-card">
+                <header class="gh-card-header">
+                    <h1 class="gh-card-title">{{name}}</h1>
+                </header>
+                <div class="gh-card-excerpt">
+                    {{#if description}}
+                        {{description}}
+                    {{else}}
+                        A collection of {{plural ../pagination.total empty="0 entries" singular="% entry" plural="% entries"}}
+                    {{/if}}
+                </div>
+            </div>
+            
+            <hr />
+            
+        </section>
+        
+    {{/tag}}
+
+    <div class="gh-feed">
+        {{#foreach posts}}
+            {{> loop}}
+        {{/foreach}}
+    </div>
+
+    <button class="gh-loadmore gh-btn">Load more</button>
+</main>
